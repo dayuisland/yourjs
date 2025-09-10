@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .circle {
+    fill: red;
+    stroke: black;
+    stroke-width: 5;
+    opacity: 0.7;
+    transition: fill 2.0s ease;
+  }
+
+  .circle:hover {
+    fill: green; /* 當鼠標懸停時填充顏色變綠 */
+  }
+</style>
+</head>
+<body>
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="250" cy="250" r="100" class="circle"/>
+</svg>
+
+
+</body>
+</html>

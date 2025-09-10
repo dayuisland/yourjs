@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!--
+  SVG（Scalable Vector Graphics）是一種基於 XML 的圖形格式，用於在網頁上顯示可縮放的向量圖形。由於其結構是基於 XML，SVG 可以很容易地與 HTML、CSS 和 JavaScript 互動，並且能夠在任何解析度下無損縮放。
+  -->
+
+  <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+    <!--需要定義 x1, y1（起點座標）和 x2, y2（終點座標）-->
+  <line x1="50" y1="50" x2="200" y2="200" stroke="blue" stroke-width="2"/>  
+</svg>
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="150" height="100" fill="green" stroke="red" stroke-width="2"/>
+</svg>
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="250" cy="250" r="100" fill="red" stroke="black" stroke-width="5"/>
+</svg>
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <path d="M150 150 A 100 100 0 0 1 250 250" fill="transparent" stroke="blue" stroke-width="2"/>
+</svg>
+
+
+</body>
+</html>

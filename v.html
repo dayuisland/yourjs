@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3.js 條形圖</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+    </style>
+</head>
+<body>
+
+<svg width="400" height="200"></svg>
+
+<script>
+    // 1. 定義資料
+    const data = [10, 20, 30, 40, 50];
+
+    // 2. 選擇 SVG 容器
+    const svg = d3.select("svg");
+
+    // 3. 綁定資料並創建矩形
+    svg.selectAll("rect")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", (d, i) => i * 80) // 每個條形的 x 座標
+        .attr("y", d => 200 - d * 3) // 每個條形的 y 座標，讓它從底部開始
+        .attr("width", 75) // 條形寬度
+        .attr("height", d => d * 3); // 條形高度，根據資料值來決定
+
+</script>
+</body>
+</html>
